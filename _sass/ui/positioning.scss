@@ -9,6 +9,11 @@
         overflow-x: hidden;
     }
 
+    &.no-vertical {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     &.lock-width,
     & .lock-width {
         max-width: 60rem;
