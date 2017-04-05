@@ -1,0 +1,13 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+//Resets
+@import "_includes/reset";
+@import "_includes/box-sizing";
+@import "_includes/typecsset";
+
+//Mixins
+@import "_includes/mixins/flexbox";
+@import "_includes/mixins/media-query";
