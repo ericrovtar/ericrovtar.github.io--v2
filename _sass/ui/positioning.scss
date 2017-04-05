@@ -1,0 +1,16 @@
+.content-wrapper {
+    padding: 4rem;
+    width: 100%;
+
+    @include media-query("palm") {
+        padding: 3rem 10px;
+
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    &.lock-width,
+    & .lock-width {
+        max-width: 60rem;
+    }
+}
