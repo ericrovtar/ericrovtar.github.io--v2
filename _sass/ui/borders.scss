@@ -1,0 +1,10 @@
+.b--{
+    &charcoal {
+        border-color: $charcoal;
+    }
+
+    &5px {
+        border-width: 5px;
+        border-style: solid;
+    }
+}
