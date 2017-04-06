@@ -2,6 +2,8 @@ body {
     font-family: $sans-serif;
     @include typecsset-font-size($base-font-size);
 
+    color: $black;
+
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
