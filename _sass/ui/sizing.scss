@@ -3,6 +3,10 @@
         height: 3rem;
     }
 
+    &5rem {
+        height: 5rem;
+    }
+
     &full {
         height: 100%;
     }
@@ -11,5 +15,9 @@
 .w--{
     &3rem {
         width: 3rem;
+    }
+
+    &5rem {
+        width: 5rem;
     }
 }
