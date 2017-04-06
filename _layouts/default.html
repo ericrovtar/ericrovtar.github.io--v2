@@ -3,21 +3,36 @@
 <title>{{ site.title }} | {{ page.title }}</title>
 <link rel="stylesheet" href="/css/main.css">
 <body>
-    <div class="menu-bar bg--root [ b--charcoal b--5px ] h--3rem" 
-         style="border-left: none; border-right: none; border-bottom: none; margin-bottom: 3rem;">
+    <div class="header" style="height: 66vh; background: red url('https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/1910102_529256084634_4358_n.jpg?oh=f4675f5658333af840c8fb08c0cd5e82&oe=5963C462')">
+        <div class="menu-bar bg--root [ b--charcoal b--5px ] h--3rem" 
+            style="border-left: none; border-right: none; border-bottom: none;">
 
-        <div class="[ content-wrapper no-vertical ] [ center-by-margin ] [ h--full ]">
-            <div class="logo h--5rem w--8rem bg--charcoal text--white [ flex align-items--baseline ]">
-                <div style="font-size: 5rem;">ER</div>
+            <div class="[ content-wrapper no-vertical ] [ center-by-margin ] [ h--full ]">
+                <div class="logo h--5rem w--8rem bg--charcoal text--white [ flex align-items--baseline ]">
+                    <div style="font-size: 5rem;">ER</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-text accent text--white" style="font-size: 3rem;">
+            <div class="content-wrapper">
+                Full-time web developer<br />
+                Part-time pop culture enthusiast
             </div>
         </div>
     </div>
 
     <div class="content-wrapper">
         <div class="content">
-            <h1>This is a heading</h1>
-            <p>This is a paragraph.</p>
+            {{ content }}
         </div>
     </div>
+
+    <footer class="bg--charcoal text--white text--smaller">
+        <div class="content-wrapper">
+            &copy; 2017 Eric Rovtar | All media and related images are copyright their respective holders<br />
+            Built with Sass and Jekyll in Visual Studio Code | Hosted on GitHub
+        </div>
+    </footer>
 </body>
 </html> 
