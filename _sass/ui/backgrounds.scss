@@ -6,4 +6,12 @@
     &charcoal {
         background-color: $charcoal;
     }
+
+    &cover {
+        background-size: cover;
+    }
+
+    &center {
+        background-position: center center;
+    }
 }

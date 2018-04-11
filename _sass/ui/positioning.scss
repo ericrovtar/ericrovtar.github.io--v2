@@ -1,3 +1,13 @@
+.position-- {
+    &absolute {
+        position: absolute;
+    }
+    
+    &relative {
+        position: relative;
+    }
+}
+
 .content-wrapper {
     padding: 4rem;
     width: 100%;
@@ -18,6 +28,10 @@
     & .lock-width {
         max-width: 60rem;
     }
+}
+
+.padding {
+    padding: 1rem $gutter;
 }
 
 .center-by-margin {

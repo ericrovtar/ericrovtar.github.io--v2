@@ -1,0 +1,7 @@
+hr {
+    &.post-item-list {
+        background: $black;
+        width: calc(100% - #{$gutter * 3});
+        margin-left: $gutter * 3;
+    }
+}

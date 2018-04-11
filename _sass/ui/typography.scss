@@ -67,7 +67,7 @@ a {
         color: $black;
     }
 
-    &--smaller {
+    &--small {
         @include typecsset-font-size(14px);
     }
 
@@ -75,8 +75,12 @@ a {
         @include typecsset-font-size($base-font-size);
     }
 
-    &--bigger {
-        @include typecsset-font-size(24px);
+    &--large {
+        @include typecsset-font-size(32px);
+    }
+
+    &--extra-large {
+        @include typecsset-font-size(48px);
     }
 }
 
@@ -98,6 +102,10 @@ a {
 
 .center {
     text-align: center;
+}
+
+.right-justify {
+    text-align: right;
 }
 
 .cursor--pointer {

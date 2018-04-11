@@ -7,8 +7,24 @@
         height: 5rem;
     }
 
+    &8rem {
+        height: 8rem;
+    }
+
+    &12rem {
+        height: 12rem;
+    }
+    
+    &66vh {
+        height: 66vh;
+    }
+
     &full {
         height: 100%;
+    }
+
+    &auto {
+        height: auto;
     }
 }
 
@@ -23,5 +39,17 @@
 
     &8rem {
         width: 8rem;
+    }
+
+    &33vw {
+        width: 33vw;
+    }
+
+    &full {
+        width: 100%;
+    }
+
+    &auto {
+        width: auto;
     }
 }
