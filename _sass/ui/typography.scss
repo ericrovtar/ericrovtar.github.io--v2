@@ -63,6 +63,10 @@ a {
         color: $dark-blue;
     }
 
+    &--dark-gray {
+        color: $dark-gray;
+    }
+
     &--black {
         color: $black;
     }
@@ -81,6 +85,14 @@ a {
 
     &--extra-large {
         @include typecsset-font-size(48px);
+    }
+
+    &--capitalize {
+        text-transform: capitalize;
+    }
+
+    &--uppercase {
+        text-transform: uppercase;
     }
 }
 
