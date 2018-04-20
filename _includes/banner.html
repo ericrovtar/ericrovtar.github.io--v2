@@ -1,0 +1,23 @@
+<div class="[ header ] [ h--66vh ] [ bg--cover bg--center ]" 
+    style="background-image: url('{{ "/images/posts/" | prepend: site.baseurl }}{{ include.post.image }}')">
+    <div class="menu-bar [ bg--root ] [ b--charcoal b--5px ] [ h--3rem ]" 
+        style="border-left: none; border-right: none; border-bottom: none;">
+
+        <div class="[ content-wrapper no-vertical ] [ center-by-margin ] [ h--full ]">
+            <a href="/">
+                <div class="[ logo ] [ w--33vw padding display--inline-block ] [ bg--root ]">
+                    <img src="/images/logo.png" class="[ h--auto w--full ]">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="[ header-text ] [ content-wrapper ] [ position--relative ]"
+        style="top: 15%">
+        <div class="[ text--extra-large text--white accent right-justify ]">
+            <span class="[ bg--root ]" style="line-height: 1.25; padding: .1em;">
+                {{ include.post.title }}
+            </span>
+        </div>
+    </div>
+</div>

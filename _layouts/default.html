@@ -2,28 +2,15 @@
 <html>
 {% include head.html %}
 <body>
-    <div class="[ header ] [ h--66vh ] [ bg--cover bg--center ]" 
-        style="background: red url(https://calebstorkey.com/wp-content/uploads/2014/07/photo_262_20051027.jpg)">
-        <div class="menu-bar [ bg--root ] [ b--charcoal b--5px ] [ h--3rem ]" 
-            style="border-left: none; border-right: none; border-bottom: none;">
-
-            <div class="[ content-wrapper no-vertical ] [ center-by-margin ] [ h--full ]">
-                <div class="[ logo ] [ w--33vw padding display--inline-block ] [ bg--root ]">
-                    <img src="/images/logo.png" class="[ h--auto w--full ]">
-                </div>
-            </div>
-        </div>
-
-        <div class="[ header-text ] [ content-wrapper ] [ position--relative ]"
-            style="top: 15%">
-            <div class="[ text--extra-large text--white accent right-justify ]">
-                <span class="[ bg--root ]" style="line-height: 1.25; padding: .1em;">
-                    Full-time web developer<br />
-                    Part-time pop culture enthusiast
-                </span>
-            </div>
-        </div>
-    </div>
+    {% if page.showLatest %}
+        {% for post in site.posts limit: 1 %}
+            {% include banner.html
+                post=post %}
+        {% endfor %}
+     {% else %}
+        {% include banner.html
+            post=page %}
+     {% endif %}
 
     <div class="content-wrapper">
         <div class="content">
