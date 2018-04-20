@@ -1,0 +1,9 @@
+.tag {
+    background: $dark-gray;
+
+    display: inline-block;
+    padding: 0 .5rem;
+
+    @include typecsset-font-size(16px);
+    color: #FFF;
+}
