@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+showLatest: true
 ---
 
 <div class="[ center-by-margin ] [ position--relative ]">
@@ -10,8 +11,13 @@ title: Home
 
     <!-- POSTS -->
     <div class="[ position--relative ]">
-        {% include post-list-item.html %}
-        <hr class="[ post-item-list ]">
+        {% for post in site.posts %}
+            {% include post-list-item.html 
+                post=post %}
+
+            <hr class="[ post-item-list ]">
+        {% endfor %}
+
         {% include post-list-item.html %}
         <hr class="[ post-item-list ]">
         {% include post-list-item.html %}
